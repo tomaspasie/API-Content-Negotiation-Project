@@ -19,5 +19,5 @@
 # Screenshot - Postman, Section Enrollments (Users) as CSV
 ![UsersAsCSV](/UsersAsCSV.png "UsersAsCSV")  
 
-# Screenshot - Postman, Section Assignments (Assignments) as CSV
+# Screenshot - Postman, Section Assignment Scores (Assignments) as CSV
 ![AssignmentsAsCSV](/AssignmentsAsCSV.png "AssignmentsAsCSV")  
