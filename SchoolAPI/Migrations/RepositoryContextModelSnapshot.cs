@@ -31,6 +31,9 @@ namespace SchoolAPI.Migrations
                         .HasColumnType("nvarchar(60)")
                         .HasMaxLength(60);
 
+                    b.Property<int>("Score")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Assignments");
@@ -39,12 +42,26 @@ namespace SchoolAPI.Migrations
                         new
                         {
                             Id = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991873"),
-                            Name = "Assignment 1"
+                            Name = "Assignment 1",
+                            Score = 78
                         },
                         new
                         {
                             Id = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
-                            Name = "Assignment 2"
+                            Name = "Assignment 2",
+                            Score = 93
+                        },
+                        new
+                        {
+                            Id = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991874"),
+                            Name = "Assignment 3",
+                            Score = 64
+                        },
+                        new
+                        {
+                            Id = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce5"),
+                            Name = "Assignment 4",
+                            Score = 88
                         });
                 });
 

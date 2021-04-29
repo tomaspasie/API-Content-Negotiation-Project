@@ -15,6 +15,8 @@ namespace Entities.Models
         [MinLength(5, ErrorMessage = "Minimum length for the Name is 60 characters.")]
         public string Name { get; set; }
 
+        public int Score { get; set; }
+
         public ICollection<Course> Courses { get; set; }
     }
 }

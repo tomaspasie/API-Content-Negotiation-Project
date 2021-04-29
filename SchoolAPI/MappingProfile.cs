@@ -37,7 +37,10 @@ namespace SchoolAPI
 
             CreateMap<Assignment, AssignmentDto>()
                 .ForMember(c => c.Name,
-                    opt => opt.MapFrom(x => x.Name));
+                    opt => opt.MapFrom(x => x.Name))
+                .ForMember(c => c.Score,
+                    opt => opt.MapFrom(x => x.Score));
+
             CreateMap<AssignmentForCreationDto, Assignment>();
             CreateMap<AssignmentForUpdateDto, Assignment>();
 

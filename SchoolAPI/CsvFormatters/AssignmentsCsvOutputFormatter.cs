@@ -47,7 +47,7 @@ namespace SchoolAPI.CsvFormatters
         }
         private static void FormatCsv(StringBuilder buffer, AssignmentDto item)
         {
-            buffer.AppendLine($"{item.Id},\"{item.Name}\"");
+            buffer.AppendLine($"{item.Id},\"{item.Name},\" Score: {item.Score}\"");
         }
     }
 }

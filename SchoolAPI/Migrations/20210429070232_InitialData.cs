@@ -12,7 +12,8 @@ namespace SchoolAPI.Migrations
                 columns: table => new
                 {
                     AssignmentId = table.Column<Guid>(nullable: false),
-                    Name = table.Column<string>(maxLength: 60, nullable: false)
+                    Name = table.Column<string>(maxLength: 60, nullable: false),
+                    Score = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -100,11 +101,13 @@ namespace SchoolAPI.Migrations
 
             migrationBuilder.InsertData(
                 table: "Assignments",
-                columns: new[] { "AssignmentId", "Name" },
+                columns: new[] { "AssignmentId", "Name", "Score" },
                 values: new object[,]
                 {
-                    { new Guid("c9d4c053-49b6-410c-bc78-2d54a9991873"), "Assignment 1" },
-                    { new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"), "Assignment 2" }
+                    { new Guid("c9d4c053-49b6-410c-bc78-2d54a9991873"), "Assignment 1", 78 },
+                    { new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"), "Assignment 2", 93 },
+                    { new Guid("c9d4c053-49b6-410c-bc78-2d54a9991874"), "Assignment 3", 64 },
+                    { new Guid("3d490a70-94ce-4d15-9494-5248280c2ce5"), "Assignment 4", 88 }
                 });
 
             migrationBuilder.InsertData(
