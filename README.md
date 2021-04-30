@@ -3,7 +3,7 @@
 ###### IS 421-002
 ###### 29 April 2021
 
-# Homework: Module 14 - Common API Techniques
+# Homework: Module 14 - Content Negotiation
 
 ### Assignment: Implement the functionality to return any response as XML and add the functionality to return courses, sections, section enrollments, and section assignment scores as CSV.  
 
