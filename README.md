@@ -1,11 +1,8 @@
-###### Tomas Pasiecznik
-###### Professor Williams
-###### IS 421-002
-###### 29 April 2021
+# API Content Negotiation Project
 
-# Homework: Module 14 - Content Negotiation
+### Goal: Implement the functionality to return any response as XML and add the functionality to return courses, sections, section enrollments, and section assignment scores as CSV.  
 
-### Assignment: Implement the functionality to return any response as XML and add the functionality to return courses, sections, section enrollments, and section assignment scores as CSV.  
+Done By Tomas Pasiecznik:
 
 # Screenshot - Postman, Any Response As XML
 ![ResponseAsXML](/ResponseAsXML.png "ResponseAsXML")  
